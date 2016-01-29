@@ -1,0 +1,22 @@
+{
+  "name": "event-dictionary",
+  "version": "1.0.0",
+  "description": "Event Dictionary ================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PactCoffee/pact-event-dictionary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PactCoffee/pact-event-dictionary/issues"
+  },
+  "homepage": "https://github.com/PactCoffee/pact-event-dictionary#readme",
+  "dependencies": {
+    "s3": "^4.4.0"
+  }
+}
