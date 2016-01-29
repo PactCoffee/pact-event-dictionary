@@ -1,0 +1,24 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for order context",
+	"self": {
+		"vendor": "com.pact",
+		"name": "order",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+	"type": "object",
+	"properties": {
+
+		"order_id": {
+			"type": "uuid",
+			"maxLength": 255
+		},
+
+		"coffee_sku": {
+			"type": "string",
+			"maxLength": 1024
+		}
+
+	}
+}
