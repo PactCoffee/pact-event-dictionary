@@ -4,18 +4,23 @@ var client = s3.createClient({
   s3Options: {
     accessKeyId: process.env.ACCESS_KEY,
     secretAccessKey: process.env.SECRET_KEY,
-
   },
 });
 
 var schemaUploader = client.uploadDir({
-  Bucket: 'snowplow-pact-iglu-schemas',
-  Prefix: 'schemas',
+  localDir: './schemas',
+  s3Params: {
+    Bucket: 'snowplow-pact-iglu-schemas',
+    Prefix: 'schemas',
+  },
 });
 
 var pathsUploader = client.uploadDir({
-  Bucket: 'snowplow-pact-iglu-jsonpaths',
-  Prefix: 'jsonpaths',
+  localDir: './jsonpaths',
+  s3Params: {
+    Bucket: 'snowplow-pact-iglu-jsonpaths',
+    Prefix: 'jsonpaths',
+  },
 });
 
 schemaUploader.on('error', err =>
