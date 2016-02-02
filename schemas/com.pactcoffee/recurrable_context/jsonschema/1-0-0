@@ -11,7 +11,7 @@
 	"properties": {
 
 		"recurrable_id": {
-			"type": "uuid",
+			"type": "string",
 			"maxLength": 255
 		},
 
@@ -21,17 +21,17 @@
 		},
 
 		"preparation": {
-			"type": "varchar"
-		},
-
-		"frequency": {
 			"type": "string",
 			"maxLength": 255
 		},
 
+		"frequency": {
+			"type": "integer"
+		},
+
 		"recurrable_state": {
 			"type": "string",
-			"maxLength": 1024
+			"maxLength": 255
 		},
 
 		"coffee_sku": {

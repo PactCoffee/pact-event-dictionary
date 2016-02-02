@@ -11,13 +11,13 @@
 	"properties": {
 
 		"order_id": {
-			"type": "uuid",
+			"type": "string",
 			"maxLength": 255
 		},
 
 		"coffee_sku": {
 			"type": "string",
-			"maxLength": 1024
+			"maxLength": 255
 		}
 
 	}
