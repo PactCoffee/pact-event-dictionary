@@ -3,7 +3,7 @@
 	"description": "Schema for recurrable context",
 	"self": {
 		"vendor": "com.pact",
-		"name": "recurrable",
+		"name": "recurrable_context",
 		"format": "jsonschema",
 		"version": "1-0-0"
 	},

@@ -3,7 +3,7 @@
 	"description": "Schema for order context",
 	"self": {
 		"vendor": "com.pact",
-		"name": "order",
+		"name": "order_context",
 		"format": "jsonschema",
 		"version": "1-0-0"
 	},
