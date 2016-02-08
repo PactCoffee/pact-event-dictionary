@@ -4,7 +4,7 @@
 
 CREATE SCHEMA IF NOT EXISTS atomic;
 
-CREATE TABLE IF NOT EXISTS atomic.com_pact_order_context_1 (
+CREATE TABLE IF NOT EXISTS atomic.com_pact_reactivation_context_1 (
     "schema_vendor"  VARCHAR(128)  ENCODE RUNLENGTH NOT NULL,
     "schema_name"    VARCHAR(128)  ENCODE RUNLENGTH NOT NULL,
     "schema_format"  VARCHAR(128)  ENCODE RUNLENGTH NOT NULL,
@@ -14,12 +14,19 @@ CREATE TABLE IF NOT EXISTS atomic.com_pact_order_context_1 (
     "ref_root"       VARCHAR(255)  ENCODE RUNLENGTH NOT NULL,
     "ref_tree"       VARCHAR(1500) ENCODE RUNLENGTH NOT NULL,
     "ref_parent"     VARCHAR(255)  ENCODE RUNLENGTH NOT NULL,
-    "coffee_sku"     VARCHAR(255)  ENCODE LZO,
-    "order_id"       VARCHAR(255)  ENCODE LZO,
+    "address_id"     VARCHAR(4096) ENCODE LZO,
+    "decaf"          BOOLEAN       ENCODE RAW,
+    "frequency"      VARCHAR(4096) ENCODE LZO,
+    "grind"          BOOLEAN       ENCODE RAW,
+    "name"           VARCHAR(4096) ENCODE LZO,
+    "preparation"    VARCHAR(4096) ENCODE LZO,
+    "product_type"   VARCHAR(4096) ENCODE LZO,
+    "randomise"      BOOLEAN       ENCODE RAW,
+    "sku"            VARCHAR(4096) ENCODE LZO,
     FOREIGN KEY (root_id) REFERENCES atomic.events(event_id)
 )
 DISTSTYLE KEY
 DISTKEY (root_id)
 SORTKEY (root_tstamp);
 
-COMMENT ON TABLE atomic.com_pact_order_context_1 IS 'iglu:com.pact/order_context/jsonschema/1-0-0';
+COMMENT ON TABLE atomic.com_pact_reactivation_context_1 IS 'iglu:com.pact/reactivation_context/jsonschema/1-0-0';

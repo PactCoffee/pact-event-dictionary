@@ -1,0 +1,57 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for identity context",
+	"self": {
+		"vendor": "com.pact",
+		"name": "identity_context",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+	"type": "object",
+	"properties": {
+
+		"id": {
+			"type": ["string", "null"]
+		},
+
+		"first_name": {
+			"type": ["string", "null"]
+		},
+
+		"last_name": {
+			"type": ["string", "null"]
+		},
+
+		"email": {
+			"type": ["string", "null"]
+		},
+
+		"product_type": {
+			"type": ["string", "null"]
+		},
+
+		"preparation": {
+			"type": ["string", "null"]
+		},
+
+		"grind": {
+			"type": ["boolean", "null"]
+		},
+
+		"randomise": {
+			"type": ["boolean", "null"]
+		},
+
+		"decaf": {
+			"type": ["string", "null"]
+		},
+
+		"frequency": {
+			"type": ["integer", "null"]
+		},
+
+		"sku": {
+			"type": ["string", "null"]
+		}
+	}
+}
