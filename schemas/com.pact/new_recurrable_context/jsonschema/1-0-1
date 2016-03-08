@@ -5,36 +5,36 @@
 		"vendor": "com.pact",
 		"name": "new_recurrable_context",
 		"format": "jsonschema",
-		"version": "1-0-0"
+		"version": "1-0-1"
 	},
 	"type": "object",
 	"properties": {
 		"name": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "product_type": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "preparation": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "grind": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "randomise": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "decaf": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "frequency": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "address_id": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "sku": {
-      "type": "string"
+      "type": ["string", "null"]
     }
 	}
 }
