@@ -9,7 +9,6 @@
         "$.hierarchy.refRoot",
         "$.hierarchy.refTree",
         "$.hierarchy.refParent",
-        "$.data.decaf",
         "$.data.email",
         "$.data.first_name",
         "$.data.frequency",
@@ -19,6 +18,7 @@
         "$.data.preparation",
         "$.data.product_type",
         "$.data.randomise",
-        "$.data.sku"
+        "$.data.sku",
+        "$.data.decaf"
     ]
 }
