@@ -5,7 +5,7 @@
 		"vendor": "com.pact",
 		"name": "identity_context",
 		"format": "jsonschema",
-		"version": "1-0-0"
+		"version": "1-0-1"
 	},
 	"type": "object",
 	"properties": {
@@ -43,7 +43,7 @@
 		},
 
 		"decaf": {
-			"type": ["string", "null"]
+			"type": ["boolean", "null"]
 		},
 
 		"frequency": {
