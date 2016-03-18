@@ -19,7 +19,7 @@
         "$.data.product_type",
         "$.data.randomise",
         "$.data.sku",
-        "$.data.decaf"
+        "$.data.decaf",
         "$.data.voucher_code"
     ]
 }
