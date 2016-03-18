@@ -20,5 +20,6 @@
         "$.data.randomise",
         "$.data.sku",
         "$.data.decaf"
+        "$.data.voucher_code"
     ]
 }
