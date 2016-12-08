@@ -61,8 +61,8 @@ This is typically used to name the type of event in a particular category. They 
 - decrement_basket
 - view_product_photo
 
-*All actions are listed independently from their parent categories.* This provides you with another useful way to segment the event data for your reports.
-*A unique event is determined by a unique action name.* You can use duplicate action names across categories, but this can affect how unique events are calculated. See the suggestions below and the Implicit Count section for more details.
+**All actions are listed independently from their parent categories.** This provides you with another useful way to segment the event data for your reports.
+**A unique event is determined by a unique action name.** You can use duplicate action names across categories, but this can affect how unique events are calculated. See the suggestions below and the Implicit Count section for more details.
 
 ### Label
 Labels provide context to the event. For example a product name or sku, an order id etc. 
@@ -76,8 +76,8 @@ Action: "add_to_basket"
 Label: "Stovetop"
 ```
 
-*All labels are listed independently from their parent categories and actions.* This provides you with another useful way to segment the event data for your reports.
-*A unique event is determined in part by a unique label name.* You can use duplicate label names across categories and actions, but this can affect how unique events are calculated. See the suggestions below and the Implicit Count section for more details.
+**All labels are listed independently from their parent categories and actions.** This provides you with another useful way to segment the event data for your reports.
+**A unique event is determined in part by a unique label name.** You can use duplicate label names across categories and actions, but this can affect how unique events are calculated. See the suggestions below and the Implicit Count section for more details.
 
 ### Value (optional)
 Note: Value is an integer.
