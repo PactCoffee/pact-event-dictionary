@@ -27,7 +27,7 @@ Page view events happen when a route changes. I.e. / -> /about (even ?decaf=true
 We have three consumers of events: 
 - Google Analytics
 - Snowplow
-- Gootgle Tag Manager
+- Google Tag Manager
 
 A structured event follows the event language of Google Analytics: https://support.google.com/analytics/answer/1033068?hl=en#Anatomy
 ```
